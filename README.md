@@ -1,6 +1,6 @@
 # Data Structures and Algorithms in Python
 
-Welcome to the repository for learning and practicing data structures and algorithms in Python. This repository contains Jupyter notebook exercises covering a wide range of topics in both data structures and search algorithms. Whether you are a beginner looking to strengthen your foundation or an experienced developer aiming to refine your skills, these exercises are designed to cater to various skill levels.
+Welcome to my repository for learning and practicing data structures and algorithms in Python. This repository contains Jupyter notebook exercises covering a wide range of topics in both data structures and search algorithms. Whether you are a beginner looking to strengthen your foundation or an experienced developer aiming to refine your skills, these exercises are designed to cater to various skill levels.
 
 ## Table of Contents
 
