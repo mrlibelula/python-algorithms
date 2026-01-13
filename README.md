@@ -15,7 +15,7 @@
 
 <br>
 
-[📖 Explore Notebooks](#data-structures) · [🧪 Run Exercises](#getting-started) · [📊 Complexity Analysis](#complexity-analysis-cheat-sheet) · [💼 Technical Overview](TECHNICAL_OVERVIEW.md)
+[📖 Explore Notebooks](#-data-structures) · [🧪 Run Exercises](#-getting-started) · [📊 Complexity Analysis](#-complexity-analysis-cheat-sheet) · [💼 Technical Overview](TECHNICAL_OVERVIEW.md)
 
 ---
 
