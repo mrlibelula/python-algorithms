@@ -15,7 +15,7 @@
 
 <br>
 
-[📖 Explore Notebooks](#data-structures) · [🧪 Run Exercises](#getting-started) · [📊 Complexity Analysis](#complexity-analysis-cheat-sheet) · [💼 Technical Overview](TECHNICAL_OVERVIEW.md)
+[📖 Explore Notebooks](#-data-structures) · [🧪 Run Exercises](#-getting-started) · [📊 Complexity Analysis](#-complexity-analysis-cheat-sheet) · [💼 Technical Overview](TECHNICAL_OVERVIEW.md)
 
 ---
 
@@ -56,7 +56,7 @@ This repository demonstrates **hands-on mastery** of fundamental computer scienc
 
 ---
 
-## 🏗️ Data Structures
+## 🧱 Data Structures
 
 <details open>
 <summary><b>📦 Linear Structures</b></summary>
