@@ -4,20 +4,21 @@
 
 ---
 
-## 📌 Repository Summary
+## Repository Summary
 
-This repository demonstrates **hands-on mastery** of fundamental computer science concepts through clean, well-documented Python implementations. It covers the core data structures and algorithms that form the backbone of technical interviews at leading technology companies.
+This repository demonstrates **hands-on mastery** of fundamental computer science concepts through clean, well-documented Python implementations. Unlike library-dependent code, every data structure and algorithm here is **built from scratch** to showcase deep understanding of how things work under the hood.
 
 | Category | Count | Implementation Style |
 |----------|-------|---------------------|
 | Data Structures | 10+ | Object-Oriented Python with Type Hints |
-| Search/Sort Algorithms | 6+ | Iterative & Recursive Approaches |
-| Exercises | 15+ | Real-world problem solving scenarios |
-| Jupyter Notebooks | 12+ | Interactive demonstrations |
+| Search/Sort/Graph Algorithms | 9+ | Iterative & Recursive Approaches |
+| Practice Exercises | 20+ | Real-world problem solving scenarios |
+| Jupyter Notebooks | 15+ | Interactive demonstrations |
+| Lines of Code | 2,500+ | Pure Python, no external dependencies |
 
 ---
 
-## 🧱 Data Structures Implemented
+## Data Structures Implemented
 
 ### 1. Linked Lists
 
@@ -233,6 +234,8 @@ t1 = threading.Thread(target=o.place_orders, args=(orders,))
 t2 = threading.Thread(target=o.serve_orders)
 ```
 
+**Additional Exercise:** Binary number generator using a queue.
+
 **Key Skills Demonstrated:**
 - Python's `collections.deque` for O(1) operations
 - Producer-consumer pattern with threading
@@ -283,7 +286,7 @@ route_graph.get_paths('Mumbai', 'New York')
 
 ---
 
-## 🔍 Algorithms Implemented
+## Algorithms Implemented
 
 ### Binary Search — O(log n)
 
@@ -326,7 +329,7 @@ def binary_search_recursive(numbers_list, number_to_find, left_index, right_inde
         return binary_search_recursive(numbers_list, number_to_find, left_index, mid_index - 1)
 
 def find_all_occurances(numbers, number_to_find):
-    """Extends binary search to find ALL indices of duplicate values"""
+    """Extends binary search to find ALL indices of duplicate values — O(log n + k)"""
     index = binary_search_recursive(numbers, number_to_find, 0, len(numbers))
     # Expand left and right from found index
     ...
@@ -336,38 +339,56 @@ def find_all_occurances(numbers, number_to_find):
 
 ### Graph Traversal Algorithms
 
-**Depth-First Search (DFS)** — Stack-based exploration  
-**Breadth-First Search (BFS)** — Queue-based level-order exploration
+| Algorithm | Approach | Use Case |
+|-----------|----------|----------|
+| **Depth-First Search (DFS)** | Stack-based exploration | Path finding, cycle detection, topological sort |
+| **Breadth-First Search (BFS)** | Queue-based level-order | Shortest path (unweighted), level-order traversal |
 
-Both implementations included with practical exercise solutions.
+Both implementations included with practical exercise solutions under `_resources/algorithms/`.
 
 ---
 
 ### Sorting Algorithms
 
-| Algorithm | Time Complexity | Space Complexity | Stability |
-|-----------|-----------------|------------------|-----------|
-| Bubble Sort | O(n²) | O(1) | Stable |
-| Quick Sort | O(n log n) avg | O(log n) | Unstable |
-| Merge Sort | O(n log n) | O(n) | Stable |
-| Insertion Sort | O(n²) | O(1) | Stable |
-| Selection Sort | O(n²) | O(1) | Unstable |
-| Shell Sort | O(n log n) ~ O(n²) | O(1) | Unstable |
+| Algorithm | Best | Average | Worst | Space | Stable |
+|-----------|:----:|:-------:|:-----:|:-----:|:------:|
+| Bubble Sort | O(n) | O(n²) | O(n²) | O(1) | Yes |
+| Quick Sort | O(n log n) | O(n log n) | O(n²) | O(log n) | No |
+| Merge Sort | O(n log n) | O(n log n) | O(n log n) | O(n) | Yes |
+| Insertion Sort | O(n) | O(n²) | O(n²) | O(1) | Yes |
+| Selection Sort | O(n²) | O(n²) | O(n²) | O(1) | No |
+| Shell Sort | O(n log n) | O(n^1.25) | O(n²) | O(1) | No |
 
 ---
 
-## 💡 Technical Skills Demonstrated
+## Practice Exercises
+
+Each topic includes hands-on exercises with solutions:
+
+| Topic | Sample Exercises |
+|-------|------------------|
+| **Arrays** | Max/min elements, Marvel heroes processing, odd/even separation, expense tracking |
+| **Linked Lists** | Singly & doubly linked list from scratch, insert/delete at any position, reverse |
+| **Hash Tables** | Weather data analysis, poem word counter, stock price lookup, custom hash functions |
+| **Stacks** | String reversal, balanced parentheses `()[]{}`, expression evaluation |
+| **Queues** | Binary number generator, food ordering system (threading), producer-consumer |
+| **Trees** | Management hierarchy, location hierarchy, BST CRUD, inorder/preorder/postorder |
+| **Graphs** | Flight route planning, find all paths, shortest path by hops, DFS/BFS |
+
+---
+
+## Technical Skills Demonstrated
 
 ### Python Proficiency
 
-- **Type Hints** — Modern Python 3.x typing syntax (`from __future__ import annotations`)
+- **Type Hints** — Modern Python 3.10+ typing syntax (`from __future__ import annotations`)
 - **Magic Methods** — Operator overloading for intuitive APIs (`__setitem__`, `__getitem__`, `__delitem__`)
 - **Collections Module** — Efficient use of `deque` for O(1) append/pop operations
 - **Multi-threading** — Producer-consumer patterns with `threading` module
 
 ### Computer Science Fundamentals
 
-- **Big O Analysis** — Time and space complexity documented in comments
+- **Big O Analysis** — Time and space complexity documented throughout
 - **Recursion** — Extensive use in tree traversals, binary search, and graph algorithms
 - **Pointer/Reference Manipulation** — Linked list operations requiring careful node management
 - **Algorithm Design Patterns** — Divide and conquer, two-pointer technique, sliding window
@@ -381,55 +402,59 @@ Both implementations included with practical exercise solutions.
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 python-algorithms/
-├── data_structures/
-│   ├── LinkedList.py          # Singly linked list
-│   ├── DoublyLinkedList.py    # Doubly linked list
-│   ├── HashTableChaining.py   # Hash table with separate chaining
-│   ├── HashTableProbing.py    # Hash table with linear probing
-│   ├── BinarySearchTree.py    # BST with traversals
-│   ├── Tree.py                # General tree structure
-│   ├── Graph.py               # Directed graph with pathfinding
-│   ├── Stack-excercise.py     # Stack with practical applications
-│   ├── Queue-excercise.py     # Queue with threading example
-│   ├── *.ipynb                # Interactive Jupyter notebooks
-│   └── resources/             # CSV files for exercises
+├── data_structures/              # Main implementations
+│   ├── LinkedList.py             # Singly linked list
+│   ├── DoublyLinkedList.py       # Doubly linked list
+│   ├── HashTableChaining.py      # Hash table with separate chaining
+│   ├── HashTableProbing.py       # Hash table with linear probing
+│   ├── BinarySearchTree.py       # BST with traversals
+│   ├── Tree.py                   # General tree structure
+│   ├── Graph.py                  # Directed graph with pathfinding
+│   ├── Stack.ipynb / Stack-excercise.py
+│   ├── Queue.ipynb / Queue-excercise.py
+│   ├── *.ipynb                   # Interactive Jupyter notebooks
+│   └── resources/                # CSV files for exercises
 │
-├── search_algorithms/
-│   ├── BinarySearch.py        # Iterative binary search
-│   ├── BinarySearch-excercise.py  # Recursive + find all occurrences
-│   ├── BubbleSort.ipynb       # Sorting algorithm notebook
-│   └── *.ipynb                # Interactive exercises
+├── search_algorithms/            # Search & sort algorithms
+│   ├── BinarySearch.py           # Iterative binary search
+│   ├── BinarySearch-excercise.py # Recursive + find all occurrences
+│   ├── BubbleSort.ipynb          # Sorting algorithm notebook
+│   └── *.ipynb                   # Interactive exercises
 │
-└── _resources/
-    ├── algorithms/            # Reference implementations
-    │   ├── BinarySearch/
-    │   ├── BubbleSort/
-    │   ├── QuickSort/
-    │   ├── MergeSort/
-    │   ├── InsertionSort/
-    │   ├── SelectionSort/
-    │   ├── ShellSort/
-    │   ├── DepthFirstSearch/
-    │   └── BreadthFirstSearch/
-    │
-    └── data_structures/       # Exercise materials
-        ├── Arrays/
-        ├── LinkedList/
-        ├── HashTable/
-        ├── Stack/
-        ├── Queue/
-        ├── Tree/
-        ├── Binary_Tree/
-        └── Graph/
+├── _resources/                   # Learning materials & solutions
+│   ├── algorithms/
+│   │   ├── BinarySearch/
+│   │   ├── BubbleSort/
+│   │   ├── QuickSort/
+│   │   ├── MergeSort/
+│   │   ├── InsertionSort/
+│   │   ├── SelectionSort/
+│   │   ├── ShellSort/
+│   │   ├── DepthFirstSearch/
+│   │   ├── BreadthFirstSearch/
+│   │   └── recursion/
+│   │
+│   └── data_structures/
+│       ├── Arrays/
+│       ├── LinkedList/
+│       ├── HashTable/
+│       ├── Stack/
+│       ├── Queue/
+│       ├── Tree/
+│       ├── Binary_Tree/
+│       └── Graph/
+│
+├── TECHNICAL_OVERVIEW.md         # This document
+└── README.md                     # Project landing page
 ```
 
 ---
 
-## 🎯 Value for Technical Interviewers
+## Value for Technical Interviewers
 
 This repository demonstrates:
 
@@ -441,45 +466,66 @@ This repository demonstrates:
 
 ### Complexity Analysis Summary
 
-| Data Structure | Insert | Delete | Search | Access |
-|---------------|--------|--------|--------|--------|
-| Linked List | O(1)* | O(1)* | O(n) | O(n) |
-| Hash Table | O(1) avg | O(1) avg | O(1) avg | O(1) avg |
-| Binary Search Tree | O(log n) avg | O(log n) avg | O(log n) avg | O(log n) avg |
-| Stack | O(1) | O(1) | O(n) | O(n) |
-| Queue | O(1) | O(1) | O(n) | O(n) |
+| Data Structure | Access | Search | Insert | Delete | Space |
+|----------------|:------:|:------:|:------:|:------:|:-----:|
+| Array | O(1) | O(n) | O(n) | O(n) | O(n) |
+| Linked List | O(n) | O(n) | O(1)* | O(1)* | O(n) |
+| Stack | O(n) | O(n) | O(1) | O(1) | O(n) |
+| Queue | O(n) | O(n) | O(1) | O(1) | O(n) |
+| Hash Table | — | O(1)† | O(1)† | O(1)† | O(n) |
+| Binary Search Tree | O(log n)† | O(log n)† | O(log n)† | O(log n)† | O(n) |
+| Graph (Adj. List) | O(V) | O(V) | O(1) | O(E) | O(V+E) |
 
-*\* At known position*
+*\* At known position &nbsp;&nbsp; † Average case*
 
 ---
 
-## 🔗 How to Explore
+## How to Explore
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/mrlibelula/python-algorithms.git
 cd python-algorithms
+
+# (Optional) Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install Jupyter for interactive notebooks
+pip install jupyter
 
 # Run standalone Python files
 python data_structures/BinarySearchTree.py
 python data_structures/Graph.py
+python data_structures/HashTableChaining.py
 
 # Launch Jupyter notebooks for interactive learning
 jupyter notebook data_structures/
 ```
 
+**Prerequisites:** Python 3.10+, Jupyter Notebook (optional)
+
 ---
 
-## 📚 Learning Path Covered
+## Learning Path Covered
 
-1. **Arrays** — Foundation of sequential data storage
-2. **Linked Lists** → **Doubly Linked Lists** — Pointer-based structures
-3. **Hash Tables** — Key-value storage with collision handling
-4. **Stacks & Queues** — LIFO/FIFO abstract data types
-5. **Trees** → **Binary Search Trees** — Hierarchical data organization
-6. **Graphs** — Network/relationship modeling with DFS/BFS
-7. **Sorting Algorithms** — Comparison-based sorting techniques
-8. **Search Algorithms** — Efficient data retrieval patterns
+```
+1. Arrays           → Foundation of sequential data storage
+         ↓
+2. Linked Lists     → Pointer-based structures (singly & doubly)
+         ↓
+3. Hash Tables      → Key-value storage with collision handling
+         ↓
+4. Stacks & Queues  → LIFO/FIFO abstract data types
+         ↓
+5. Trees → BST      → Hierarchical data organization
+         ↓
+6. Graphs           → Network modeling with DFS/BFS
+         ↓
+7. Sorting          → Comparison-based sorting techniques
+         ↓
+8. Searching        → Efficient data retrieval patterns
+```
 
 ---
 
