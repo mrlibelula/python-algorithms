@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧠 Data Structures & Algorithms in Python
+# Data Structures & Algorithms in Python
 
 ### A Comprehensive Interview Preparation Repository
 
@@ -15,13 +15,13 @@
 
 <br>
 
-[📖 Explore Notebooks](#-data-structures) · [🧪 Run Exercises](#-getting-started) · [📊 Complexity Analysis](#-complexity-analysis-cheat-sheet) · [💼 Technical Overview](TECHNICAL_OVERVIEW.md)
+[Explore Notebooks](#data-structures) · [🧪 Run Exercises](#-getting-started) · [Complexity Analysis](#complexity-analysis-cheat-sheet) · [Technical Overview](TECHNICAL_OVERVIEW.md)
 
 ---
 
 </div>
 
-## 🎯 About This Repository
+## About This Repository
 
 This repository demonstrates **hands-on mastery** of fundamental computer science concepts through clean, well-documented Python implementations. Unlike library-dependent code, every data structure and algorithm here is **built from scratch** to showcase deep understanding of how things work under the hood.
 
@@ -29,7 +29,7 @@ This repository demonstrates **hands-on mastery** of fundamental computer scienc
 <tr>
 <td width="50%">
 
-### 📈 Repository Stats
+### Repository Stats
 
 | Category | Count |
 |:---------|:-----:|
@@ -42,13 +42,13 @@ This repository demonstrates **hands-on mastery** of fundamental computer scienc
 </td>
 <td width="50%">
 
-### 💡 Key Highlights
+### Key Highlights
 
-- ✅ **No External Dependencies** — Pure Python implementations
-- ✅ **Interview-Ready** — Covers FAANG-style questions
-- ✅ **Well-Documented** — Clear explanations & comments
-- ✅ **Interactive** — Jupyter notebooks for step-by-step learning
-- ✅ **Practical Examples** — Real-world use cases
+- **No External Dependencies** — Pure Python implementations
+- **Interview-Ready** — Covers FAANG-style questions
+- **Well-Documented** — Clear explanations & comments
+- **Interactive** — Jupyter notebooks for step-by-step learning
+- **Practical Examples** — Real-world use cases
 
 </td>
 </tr>
@@ -56,10 +56,10 @@ This repository demonstrates **hands-on mastery** of fundamental computer scienc
 
 ---
 
-## 🧱 Data Structures
+## Data Structures
 
 <details open>
-<summary><b>📦 Linear Structures</b></summary>
+<summary><b>Linear Structures</b></summary>
 
 <br>
 
@@ -73,7 +73,7 @@ This repository demonstrates **hands-on mastery** of fundamental computer scienc
 </details>
 
 <details open>
-<summary><b>🗂️ Hash-Based Structures</b></summary>
+<summary><b>Hash-Based Structures</b></summary>
 
 <br>
 
@@ -85,7 +85,7 @@ This repository demonstrates **hands-on mastery** of fundamental computer scienc
 </details>
 
 <details open>
-<summary><b>🌳 Tree Structures</b></summary>
+<summary><b>Tree Structures</b></summary>
 
 <br>
 
@@ -97,7 +97,7 @@ This repository demonstrates **hands-on mastery** of fundamental computer scienc
 </details>
 
 <details open>
-<summary><b>🔗 Graph Structures</b></summary>
+<summary><b>Graph Structures</b></summary>
 
 <br>
 
@@ -109,16 +109,16 @@ This repository demonstrates **hands-on mastery** of fundamental computer scienc
 
 ---
 
-## ⚡ Algorithms
+## Algorithms
 
-### 🔍 Search Algorithms
+### Search Algorithms
 
 | Algorithm | Time Complexity | Implementation | Description |
 |:----------|:---------------:|:---------------|:------------|
 | **Binary Search** | O(log n) | [BinarySearch.py](search_algorithms/BinarySearch.py) | Iterative & Recursive implementations |
 | **Binary Search (Find All)** | O(log n + k) | [BinarySearch-excercise.py](search_algorithms/BinarySearch-excercise.py) | Find all occurrences of duplicates |
 
-### 📊 Sorting Algorithms
+### Sorting Algorithms
 
 | Algorithm | Best | Average | Worst | Space | Stable |
 |:----------|:----:|:-------:|:-----:|:-----:|:------:|
@@ -129,7 +129,7 @@ This repository demonstrates **hands-on mastery** of fundamental computer scienc
 | **Selection Sort** | O(n²) | O(n²) | O(n²) | O(1) | ❌ |
 | **Shell Sort** | O(n log n) | O(n^1.25) | O(n²) | O(1) | ❌ |
 
-### 🗺️ Graph Algorithms
+### Graph Algorithms
 
 | Algorithm | Implementation | Use Case |
 |:----------|:---------------|:---------|
@@ -138,7 +138,7 @@ This repository demonstrates **hands-on mastery** of fundamental computer scienc
 
 ---
 
-## 📊 Complexity Analysis Cheat Sheet
+## Complexity Analysis Cheat Sheet
 
 <div align="center">
 
@@ -163,7 +163,7 @@ This repository demonstrates **hands-on mastery** of fundamental computer scienc
 Each topic includes hands-on exercises with solutions:
 
 <details>
-<summary><b>🔷 Arrays</b> — Manipulation, searching, sorting</summary>
+<summary><b>Arrays</b> — Manipulation, searching, sorting</summary>
 
 - Finding max/min elements
 - Marvel heroes data processing
@@ -173,7 +173,7 @@ Each topic includes hands-on exercises with solutions:
 </details>
 
 <details>
-<summary><b>🔷 Linked Lists</b> — Pointer manipulation mastery</summary>
+<summary><b>Linked Lists</b> — Pointer manipulation mastery</summary>
 
 - Implement singly linked list from scratch
 - Add doubly linked list functionality
@@ -183,7 +183,7 @@ Each topic includes hands-on exercises with solutions:
 </details>
 
 <details>
-<summary><b>🔷 Hash Tables</b> — Collision handling strategies</summary>
+<summary><b>Hash Tables</b> — Collision handling strategies</summary>
 
 - Weather data analysis with hash tables
 - Word occurrence counter (poem analysis)
@@ -193,7 +193,7 @@ Each topic includes hands-on exercises with solutions:
 </details>
 
 <details>
-<summary><b>🔷 Stacks</b> — LIFO applications</summary>
+<summary><b>Stacks</b> — LIFO applications</summary>
 
 - String reversal
 - Balanced parentheses checker `()[]{}` 
@@ -202,7 +202,7 @@ Each topic includes hands-on exercises with solutions:
 </details>
 
 <details>
-<summary><b>🔷 Queues</b> — FIFO applications</summary>
+<summary><b>Queues</b> — FIFO applications</summary>
 
 - Binary number generator
 - Food ordering system (with threading!)
@@ -211,7 +211,7 @@ Each topic includes hands-on exercises with solutions:
 </details>
 
 <details>
-<summary><b>🔷 Trees</b> — Hierarchical data mastery</summary>
+<summary><b>Trees</b> — Hierarchical data mastery</summary>
 
 - Management hierarchy visualization
 - Location hierarchy system
@@ -221,7 +221,7 @@ Each topic includes hands-on exercises with solutions:
 </details>
 
 <details>
-<summary><b>🔷 Graphs</b> — Network algorithms</summary>
+<summary><b>Graphs</b> — Network algorithms</summary>
 
 - Flight route planning system
 - Find all paths between nodes
@@ -271,7 +271,7 @@ jupyter notebook data_structures/
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 python-algorithms/
@@ -318,7 +318,7 @@ python-algorithms/
 
 ---
 
-## 💼 Technical Skills Demonstrated
+## Technical Skills Demonstrated
 
 <table>
 <tr>
@@ -354,10 +354,10 @@ python-algorithms/
 
 ---
 
-## 🎓 Learning Path
+## Learning Path
 
 ```
-📚 Recommended order for studying this repository:
+Recommended order for studying this repository:
 
 1. Arrays           → Foundation of sequential data
          ↓
@@ -378,19 +378,17 @@ python-algorithms/
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](../../issues).
 
 ---
 
-## 📬 Contact
-
 <div align="center">
 
 **Built with 💙 by [libe.dev](https://libe.dev)**
 
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-libe.dev-blue?style=flat-square)](https://libe.dev)
+[![Portfolio](https://img.shields.io/badge/Portfolio-libe.dev-blue?style=flat-square)](https://libe.dev)
 [![GitHub](https://img.shields.io/badge/GitHub-@mrlibelula-181717?style=flat-square&logo=github)](https://github.com/mrlibelula)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/mrlibelula/)
 
